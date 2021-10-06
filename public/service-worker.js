@@ -50,7 +50,7 @@ self.addEventListener("install", function (e) {
     );
   });
   
-  // fetch service worker
+  // intercept fetch requests
   self.addEventListener("fetch", function (e) {
     console.log("fetch request : " + e.request.url);
     e.respondWith(
